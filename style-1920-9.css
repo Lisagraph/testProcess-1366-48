@@ -1,0 +1,3465 @@
+@charset "UTF-8";
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	
+	body * { -webkit-text-size-adjust: none; }
+}
+
+body{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #FFECDF;
+}
+
+body::-webkit-scrollbar {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* hide scrollbar but allow scrolling */
+#scrollDiv::-webkit-scrollbar{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* hide scrollbar but allow scrolling */
+#content::-webkit-scrollbar{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+/* hide scrollbar but allow scrolling */
+.fixed::-webkit-scrollbar{
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+h1{
+	font-size: 1.5em;
+	text-align: center;
+	padding: 0 25px;
+	color: #570060;
+}
+
+h2{
+	font-size: 1.3em;
+	text-align: center;
+	padding: 0 25px;
+	color: #570060;
+}
+
+h3{
+	font-size: 1.2em;
+	line-height: .05em;
+	text-align: center;
+	padding: 0 25px;
+	color: #570060;
+}
+
+h4{
+	font-size: 15px;
+	line-height: .1em;
+	text-align: center;
+	padding: 0 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #570060;
+}
+
+p{
+	font-size: .95em;
+	text-align: left;
+	padding: 0 15px 5px 25px;
+	color: #570060;
+}
+
+/* header stylings start */
+.Nav{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	top: 0;
+	background: #FFECDF;
+	z-index: 2;
+	-webkit-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	-moz-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+}
+
+.NavThird{
+	width: 33.2%;
+	height: 5vh;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.headBtn{
+	width: 33.33%;
+	height: 100%;
+	align-content: center;
+	float: left;
+}
+
+.headBtnInner{
+	position: relative;
+  	top: 3px;
+  	left: 38px;
+  	width: 186px;
+  	height: 40px;
+  	align-content: center;
+  	border: #570060 solid 3px;
+  	border-radius: 25px;
+	font-size: .75em;
+	line-height: 3.5em;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+}
+
+.headBtnInner:hover{
+  	border: #FFCEAC solid 3px;
+	color: #fff;
+	background: #570060;
+}
+/* header stylings end */
+/* header stylings end */
+
+.btnMenuCon{
+	display: none;
+}
+
+/* Sydney setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 80vh;
+	top: 95vh;
+	z-index: -1;
+}
+
+.Hbridge{
+	position: fixed;
+	bottom: 4vh;
+	right: 6vw;
+	width: 30%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.OH{
+	position: fixed;
+	top: 90vh;
+	left: 67vw;
+	width: 30%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back1{
+	position: fixed;
+	bottom: 4vh;
+	right: 38vw;
+	width: 5%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back2{
+	position: fixed;
+	bottom: 4vh;
+	right: 43vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back3{
+	position: fixed;
+	bottom: 4vh;
+	right: 50vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back4{
+	position: fixed;
+	bottom: 4vh;
+	right: 58vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back5{
+	position: fixed;
+	bottom: 4vh;
+	right: 68vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back6{
+	position: fixed;
+	bottom: 4vh;
+	right: 85.1vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center1{
+	position: fixed;
+	bottom: 4vh;
+	right: 39vw;
+	width: 13%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front1{
+	position: fixed;
+	bottom: 4vh;
+	right: 33vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front2{
+	position: fixed;
+	bottom: 4vh;
+	right: 40.5vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front3{
+	position: fixed;
+	bottom: 4vh;
+	right: 46.7vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front4{
+	position: fixed;
+	bottom: 4vh;
+	right: 53.7vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.centrepoint{
+	position: fixed;
+	bottom: 4vh;
+	right: 64vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center2{
+	position: fixed;
+	bottom: 4vh;
+	right: 73.9vw;
+	width: 12.1%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center3{
+	position: fixed;
+	bottom: 4vh;
+	right: 89vw;
+	width: 11%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Sph{
+	position: fixed;
+	bottom: 4vh;
+	left: 0;
+	width: 100%;
+	height: 737.75px;
+	background-color: transparent;
+	z-index: -1;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	bottom: 4vh;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	background-color: #FFECDF;
+	opacity: .8;
+	z-index: -1;
+}
+/* Sydney setup end */
+
+/* screen container thirds start */
+.scrCon1, .scrCon3{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 853.33px;
+	height: 100vh;
+	float: left;
+	background: transparent;
+	float: left;
+	opacity: .1;
+}
+
+.scrCon2{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 853.33px;
+	height: 100vh;
+	float: left;
+	background: transparent;
+}
+/* screen container thirds end */
+	
+#dropBookTarget {
+  display: none;
+	}
+
+.bookTip {
+	display: none;
+}
+
+/* Book */
+.book {
+    position: fixed;
+    width: 842px;
+    height: 1000px;
+    transition: transform 0.5s;
+	margin: 13vh 0 0 .3vw;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+/* .front, .back of pages*/
+.front, .back {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+	border-radius: 25px;
+	-webkit-box-shadow: -1px 6px 7px 5px rgba(87,0,96,0.05);
+	-moz-box-shadow: -1px 6px 7px 5px rgba(87,0,96,0.05);
+	box-shadow: -1px 6px 7px 5px rgba(87,0,96,0.05);
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 0;
+}
+
+.frontContent, .backContent {
+    width: 100%;
+    height: 100%;
+}
+
+/* displays content on back on page forwards, not backwards */
+.backContent {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect - flips out left page - increasing  transform: rotateY(-180deg) to eg -280deg causes paper flip to back of stack like a notepad */
+.flipped .front, .flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Sydney setup start */
+.sydSec, .darSec{
+	position: re;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	z-index: 45000;
+}
+
+.sydCon, .darCon{
+	position: relative;
+	width: 100%;
+	height: 218px;
+	float: left;
+}
+
+.sydCon{
+	top: 0;
+	left: 0;
+}
+
+.darCon{
+	top: 0;
+	left: 0;
+}
+
+.tropLogoCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 64px;
+	float: left;
+	z-index: 100000;
+}
+
+.tropLogoInCon, .sydInCon, .darInCon{
+	top: 0;
+	left: 10%;
+	position: relative;
+	width: 80%;
+	height: 100%;
+}
+
+.syd1, .syd2, .syd3, .syd4, .syd5, .syd6, .syd7, .syd8, .syd9, .syd10, .syd11, .syd12, .syd13, .syd14, .syd15, .syd16, .dar1,  .dar2,  .dar3,  .dar4,  .dar5,  .dar6,  .dar7,  .dar8,  .dar9,  .dar10,  .dar11,  .dar12,  .dar13,  .dar14,  .dar15,  .dar16,  .dar17{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	float: left;
+}
+
+.syd1{
+	top: 225px;
+	left: 3px;
+	width: 50px;
+}
+
+.syd2{
+	top: 125px;
+	left: 0;
+	width: 35px;
+}
+
+.syd3{
+	top: 238px;
+	left: 0;
+	width: 50px;
+}
+
+.syd4{
+	top: 202px;
+	left: 0;
+	width: 35px;
+}
+
+.syd5{
+	top: 135px;
+	left: 0;
+	width: 40px;
+}
+
+.syd6{
+	top: 190px;
+	left: 0;
+	width: 35px;
+}
+
+.syd7{
+	top: 155px;
+	left: 0;
+	width: 25px;
+}
+
+.syd8{
+	top: 150px;
+	left: 0;
+	width: 25px;
+}
+
+.syd9{
+	top: 152px;
+	left: 0;
+	width: 35px;
+}
+
+.syd10{
+	top: 135px;
+	left: 0;
+	width: 38px;
+}
+
+.syd11{
+	top: 175px;
+	left: 0;
+	width: 35px;
+}
+
+.syd12{
+	top: 155px;
+	left: -2px;
+	width: 28px;
+}
+
+.syd13{
+	top: 175px;
+	left: 0;
+	width: 35px;
+}
+
+.syd14{
+	top: 250px;
+	left: -30px;
+	width: 25px;
+}
+
+.syd15{
+	top: 249px;
+	left: -45px;
+	width: 155px;
+}
+
+.syd16{
+	top: 205px;
+	left: 15px;
+	width: 145px;
+}
+
+.dar1{
+	top: 72px;
+	left: 5px;
+	width: 65px;
+}
+
+.dar2{
+	top: 68px;
+	left: 0;
+	width: 65px;
+}
+
+.dar3{
+	top: 70px;
+	left: 0;
+	width: 65px;
+}
+
+.dar4{
+	top: 65px;
+	left: 0;
+	width: 45px;
+}
+
+.dar5{
+	top: 70px;
+	left: -10px;
+	width: 35px;
+}
+
+.dar6{
+	top: 70px;
+	left: -45px;
+	width: 55px;
+}
+
+.dar7{
+	top: 70px;
+	left: -100px;
+	width: 105px;
+}
+
+.dar8{
+	top: 74px;
+	left: -95px;
+	width: 55px;
+}
+
+.dar9{
+	top: 70px;
+	left: -90px;
+	width: 45px;
+}
+
+.dar10{
+	top: 68px;
+	left: -85px;
+	width: 45px;
+}
+
+.dar11{
+	top: 65px;
+	left: -100px;
+	width: 30px;
+}
+
+.dar12{
+	top: 70px;
+	left: -100px;
+	width: 35px;
+}
+
+.dar13{
+	top: 15px;
+	left: 35px;
+	width: 30px;
+}
+
+.dar14{
+	top: 10px;
+	left: -45px;
+	width: 65px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar15{
+	top: 18px;
+	left: -45px;
+	width: 35px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar16{
+	top: -75px;
+	left: -10px;
+	width: 35px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+/* controls */
+button{
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: 1000px;
+    border: none;
+	text-align: center;
+	align-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+/*
+button:focus{
+    outline: none;
+}
+
+button:hover i{
+    color: #636363;
+}
+
+i{
+    font-size: 50px;
+    color: gray;
+}
+*/
+
+#prevBtnBook{
+	position: absolute;
+	top: 0;
+	margin-left: 25px;
+	z-index: 5;
+	color: #FFCEAC;
+	background-color: #05FFC3;
+	padding-top: 0;
+	font-size: 2em;
+}
+
+#nextBtnBook{
+	position: absolute;
+	top: 0;
+	margin-left: 770px;
+	z-index: 5;
+	background-color: #00FF6A;
+	color: #FFCEAC;
+	padding-top: 0;
+	font-size: 2em;
+}
+
+#prevBtnBook:active, #nextBtnBook:active{
+    transform: scale(0.3);
+	transition: transform 0.05s;
+}
+
+/* Paper stack order */
+#p1{
+    z-index: 2;
+}
+
+#p2{
+    z-index: 1;
+}
+
+.binderQueries{
+	display: none;
+}
+
+.binder{
+    position: absolute;
+    top: 13vh;
+    left: -10px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.spiral{
+	position: relative;
+    width: 36px;
+    height: 12px;
+    background: #f6f7f4;
+    border-radius: 5mm;
+    z-index: 9999;
+    -moz-box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+	box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+}
+
+/* internal page containers */
+.pg10percent, .pg20percent, .pg25percent, .pg30percent, .pg33percent, .pg40percent, .pg50percent{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.pg10percent{
+	height: 10%;
+	background: #B6B763;
+}
+
+.pg20percent{
+	height: 20%;
+	background: #7F65FF;
+}
+
+.pg25percent{
+	height: 25%;
+}
+
+.pg30percent{
+	height: 30%;
+	background: #000;
+}
+
+.pg33percent{
+	height: 33.33%;
+	background: #9999FF;
+}
+
+.pg40percent{
+	height: 40%;
+	background: #00FF6A;
+}
+
+.pg50percent{
+	height: 50%;
+	background: transparent;
+}
+
+.pg80percent{
+	top: 0;
+	left: 10%;
+	position: relative;
+	width: 80%;
+	height: 100%;
+	background: #FF6CBF;
+}
+
+.cvCon{
+	top: 0;
+	left: 10%;
+	position: relative;
+	width: 80%;
+	height: 100%;
+	background: #C4FF54;
+}
+/* book end */
+
+/* METCON start */
+.MetricCon{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 80px;
+	background: #00FFE3;
+}
+
+.MetGrid {
+	width: 100%;
+	height: 240px;
+  	display: grid;
+    /* grid-template-columns is width of columns - add an extra value to make an extra column - so if there's 3 values there will be 3 columns, 4 values makes 4 cols, 5 makes 5 cols and so on */
+  	grid-template-columns: 72px 72px 72px 72px 72px;
+    /* grid-gap is width between columns */
+  	grid-gap: 18px 18px;
+  	/* padding is padding around the outside of columns */
+  	padding: 0;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 3px;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 60px;
+  	border-radius: 5px;
+	border: 3px #570060 solid;	
+}
+/* METCON end */
+
+/* contains lisaSkill buttons start */
+.lisaSkill > a {
+    display: inline-flex;
+    width: auto;
+    height: 46px;
+    font-size: 18.6px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #570060;
+    border: #570060 3px solid;
+    border-radius: 0 5px;
+    position: relative;
+    z-index: 3;
+}
+
+/* top is distance from the top that number button bounces when clicked */
+.lisaSkill > a:active{
+    top: 1px;
+    color: #570060;
+}
+
+/* background is colour of number button when clicked */
+.lisaSkill > a:focus {
+    background: #005B60;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type){
+  .lisaSkill > a {
+    display: none;
+  }
+}
+/* contains lisaSkill buttons end */
+
+.qualConCard{
+	position: relative;
+    top: 0;
+    left: 11.5%;
+    width: 73%;
+    height: 192px;
+    background-color: #DCC693;
+}
+
+.qualCon20percent{
+	position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #DFC1D3;
+}
+
+.qualCon60percent{
+	position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #A2BECD;
+}
+
+/* qual slider start */
+.qualSlider{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 193px;
+    background-color: #E5FF63;
+	border: #570060 3px solid;
+	border-radius: 10px;
+    z-index: 3;
+}
+
+.qualWrapper{
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+
+#qualItems{
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -450px;
+}
+
+#qualItems.shifting {
+   transition: left .2s ease-out;
+}
+
+.qualSlide{
+    width: 450px;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+}
+
+.qualControl{
+    position: absolute;
+    top: 48%;
+    width: 5px;
+    height: 5px;
+    border: 3px #570060 solid;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.qualControl:hover {
+    background: #570060;
+    width: 5px;
+    height: 5px;
+    border-radius: 24px;
+    border: 3px #570060 solid;
+    z-index: 2;
+}
+
+.qualPrev, .qualNext{
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.qualPrev{
+    left: 10px;
+}
+
+.qualNext {
+    right: 10px;
+}
+
+.qualPrev:active, .qualNext:active {
+    transform: scale(0.9);
+}
+/* qual slider end */
+
+.CreativeCloudIcon:hover{
+	color: #fff;
+	background: #86005E;
+}
+
+.AdobeIllustratorIcon:hover{
+	color: #fff;
+	background: #FE8000;
+}
+
+.AdobeAfterEffectsIcon:hover{
+	color: #fff;
+	background: #D794FD;
+}
+
+.AdobePhotoshopIcon:hover{
+	color: #fff;
+	background: #01C5F3;
+}
+
+.VSIcon:hover{
+	color: #fff;
+	background: #2D64FF;
+}
+
+.DreamweaverIcon:hover{
+	color: #fff;
+	background: #FF4196;
+}
+
+.GithubIcon:hover{
+	color: #fff;
+	background: #999999;
+}
+
+.PremierProIcon:hover{
+	color: #fff;
+	background: #EE8CFD;
+}
+
+.OORTOIcon:hover{
+	color: #fff;
+	background: #F6ABA8;
+}
+
+.AnimateFlashIcon:hover{
+	color: #fff;
+	background: #E34D26;
+}
+
+.XDIcon:hover{
+	color: #fff;
+	background: #FA2FC1;
+}
+
+.HTMLIcon:hover{
+	color: #fff;
+	background: #E34D26;
+}
+
+.JavascriptIcon:hover{
+	color: #fff;
+	background: #89CE17;
+}
+
+.CSSIcon:hover{
+	color: #fff;
+	background: #2D64A4;
+}
+
+.MailchimpIcon:hover{
+  background: #FEFF00;
+}
+
+.paraCon{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  float: left;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.artworkCon33percent, .artworkCon50percent{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  float: left;	
+}
+
+.artworkCon33percent{
+  width: 33.33%;
+}
+
+.artworkCon50percent{
+  width: 50%;
+}
+
+a .equitiseHome{
+  color: #570060;
+  background: #fff; 
+}
+
+a .equitiseHome:hover{
+  color: #fff;
+  background: #570060; 
+}
+
+.fixedCV{
+	margin: 93px 0 0 0;
+	height: 815px;
+    width: 674px;
+    position: fixed;
+    background: #BC8FFF;
+	overflow: hidden;
+}
+
+#scrollCV{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 674px;
+	height:  100%;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+}
+
+#contentCV{
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+ 	position: absolute;
+ 	float: left;
+}
+/* book Content end */
+
+/* footer start */
+.FootBottom{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	bottom: 0;
+	background: #FFECDF;
+	z-index: 20000;
+	box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.9);
+}
+
+.monFooter{
+	top: 0;
+ 	left: 0;
+	margin: -30px 0 0 -30px;
+ 	width: 70px;
+	height: 70px;
+ 	position: relative;
+	background: transparent;
+}
+/* footer end */
+
+/* @media max-width:1920px start */
+@media screen and (max-width:1920px){
+	
+body{
+	width: 100vw;
+	height: 100vh;
+}
+	
+h3{
+	font-size: .9em;
+	line-height: .5em;
+}
+
+.workLogoQuery{
+	padding: 3px !important;
+}
+	
+/* header stylings start */
+.Nav{
+	height: 8vh;
+}
+
+.NavThird{
+	height: 8vh;
+}
+
+.headBtnInner{
+  	top: 2px;
+  	left: 30px;
+  	width: 130px;
+  	height: 40px;
+}
+/* header stylings end */
+
+/* Sydney bg setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	z-index: -1;
+}
+
+.Hbridge{
+	position: fixed;
+	bottom: 1vh;
+	right: 10vw;
+	width: 30%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.OH{
+	position: fixed;
+	bottom: 1vh;
+	left: 67vw;
+	width: 30%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back1{
+	position: fixed;
+	bottom: 1vh;
+	right: 38vw;
+	width: 5%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back2{
+	position: fixed;
+	bottom: 1vh;
+	right: 43vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back3{
+	position: fixed;
+	bottom: 1vh;
+	right: 50vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back4{
+	position: fixed;
+	bottom: 1vh;
+	right: 58vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back5{
+	position: fixed;
+	bottom: 1vh;
+	right: 68vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back6{
+	position: fixed;
+	bottom: 1vh;
+	right: 85.1vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center1{
+	position: fixed;
+	bottom: 1vh;
+	right: 39vw;
+	width: 13%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front1{
+	position: fixed;
+	bottom: 1vh;
+	right: 33vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front2{
+	position: fixed;
+	bottom: 1vh;
+	right: 40.5vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front3{
+	position: fixed;
+	bottom: 1vh;
+	right: 46.7vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front4{
+	position: fixed;
+	bottom: 1vh;
+	right: 53.7vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.centrepoint{
+	position: fixed;
+	bottom: 1vh;
+	right: 64vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center2{
+	position: fixed;
+	bottom: 1vh;
+	right: 73.9vw;
+	width: 12.1%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center3{
+	position: fixed;
+	bottom: 1vh;
+	right: 89vw;
+	width: 11%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Sph{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 737.75px;
+	background-color: transparent;
+	z-index: -1;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFECDF;
+	opacity: .8;
+	z-index: -1;
+}
+/* Sydney bg setup end */
+
+/* screen container thirds start */
+.scrCon1, .scrCon3{
+	display: none;
+}
+
+.scrCon2{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	background: transparent;
+}
+/* screen container thirds end */
+	
+#dropBookTarget{
+  display: none;
+}
+
+.bookTip{
+	display: none;
+}
+
+/* Book */
+.book{
+    width: 630px;
+    height: 800px;
+	margin: 12vh 0 0 33.5%;
+}
+	
+.tropLogoCon{
+	top: -40px;
+	height: 46px;
+	background: transparent;
+}
+	
+.sydCon{
+	top: -40px;
+	background: transparent;
+}
+
+.darCon{
+	top: -35px;
+	background: transparent;
+}
+
+/* Sydney cover setup start */
+.syd1, .syd2, .syd3, .syd4, .syd5, .syd6, .syd7, .syd8, .syd9, .syd10, .syd11, .syd12, .syd13, .syd14, .syd15, .syd16, .dar1,  .dar2,  .dar3,  .dar4,  .dar5,  .dar6,  .dar7,  .dar8,  .dar9,  .dar10,  .dar11,  .dar12,  .dar13,  .dar14,  .dar15,  .dar16,  .dar17{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	float: left;
+}
+
+.syd1{
+	top: 245px;
+	left: 3px;
+	width: 30px;
+}
+
+.syd2{
+	top: 193px;
+	left: -2px;
+	width: 20px;
+}
+
+.syd3{
+	top: 255px;
+	left: 0;
+	width: 30px;
+}
+
+.syd4{
+	top: 225px;
+	left: -5px;
+	width: 28px;
+}
+
+.syd5{
+	top: 187px;
+	left: 0;
+	width: 25px;
+}
+
+.syd6{
+	top: 208px;
+	left: -5px;
+	width: 28px;
+}
+
+.syd7{
+	top: 155px;
+	left: -10px;
+	width: 25px;
+}
+
+.syd8{
+	top: 168px;
+	left: -10px;
+	width: 22px;
+}
+
+.syd9{
+	top: 169px;
+	left: -5px;
+	width: 30px;
+}
+
+.syd10{
+	top: 175px;
+	left: -11px;
+	width: 28px;
+}
+
+.syd11{
+	top: 190px;
+	left: -9px;
+	width: 30px;
+}
+
+.syd12{
+	top: 175px;
+	left: -7px;
+	width: 25px;
+}
+
+.syd13{
+	top: 182px;
+	left: -5px;
+	width: 33px;
+}
+
+.syd14{
+	top: 250px;
+	left: -30px;
+	width: 30px;
+}
+
+.syd15{
+	top: 205px;
+	left: -20px;
+	width: 125px;
+}
+
+.syd16{
+	top: 170px;
+	left: 10px;
+	width: 120px;
+}
+
+.dar1{
+	top: 70px;
+	left: 5px;
+	width: 55px;
+}
+
+.dar2{
+	top: 68px;
+	left: 0;
+	width: 55px;
+}
+
+.dar3{
+	top: 70px;
+	left: 0;
+	width: 55px;
+}
+
+.dar4{
+	top: 65px;
+	left: 0;
+	width: 35px;
+}
+
+.dar5{
+	top: 70px;
+	left: -10px;
+	width: 25px;
+}
+
+.dar6{
+	top: 70px;
+	left: -45px;
+	width: 35px;
+}
+
+.dar7{
+	top: 70px;
+	left: -100px;
+	width: 80px;
+}
+
+.dar8{
+	top: 74px;
+	left: -95px;
+	width: 45px;
+}
+
+.dar9{
+	top: 70px;
+	left: -90px;
+	width: 35px;
+}
+
+.dar10{
+	top: 68px;
+	left: -85px;
+	width: 35px;
+}
+
+.dar11{
+	top: 65px;
+	left: -100px;
+	width: 20px;
+}
+
+.dar12{
+	top: 70px;
+	left: -100px;
+	width: 25px;
+}
+
+.dar13{
+	top: 30px;
+	left: 35px;
+	width: 30px;
+}
+
+.dar14{
+	top: 10px;
+	left: -45px;
+	width: 60px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar15{
+	top: 0;
+	left: -45px;
+	width: 32px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar16{
+	top: -80px;
+	left: -10px;
+	width: 30px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+/* Sydney cover setup end */
+
+/* controls */
+button{
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: 1000px;
+    border: none;
+	text-align: center;
+	align-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+/*
+button:focus{
+    outline: none;
+}
+
+button:hover i{
+    color: #636363;
+}
+
+i{
+    font-size: 50px;
+    color: gray;
+}
+*/
+
+#prevBtnBook{
+	top: 0;
+	margin-left: 15px;
+	height: 800px;
+}
+
+#nextBtnBook{
+	top: 0;
+	margin-left: 570px;
+	height: 800px;
+}
+
+.binderQueries{
+	display: none;
+}
+
+.binder{
+    top: 12.5vh;
+    left: 32.5vw;
+    height: 800px;
+}
+/* book end */
+
+/* METCON start */
+
+.MetricCon{
+	position: relative;
+	width: 300px;
+	height: 225px;
+	margin: 0;
+}
+
+.MetGrid {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+  	display: grid;
+    /* grid-template-columns is width of columns - add an extra value to make an extra column - so 3 values creates 3 columns, 4 values is 4 cols, 5 is 5 cols etc */
+  	/* grid-template-columns is width of columns - add an extra value to make an extra column - so if there's 3 values there will be 3 columns, 4 values makes 4 cols, 5 makes 5 cols and so on */
+  	grid-template-columns: 17% 17% 17% 17% 17%;
+    /* grid-gap is width between columns */
+  	grid-gap: 0 2% 0 0;
+  	/* padding is padding around the outside of columns */
+  	padding: 0;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 2px;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 68%;
+  	border-radius: 5px;
+	border: 3px #570060 solid;	
+}
+	
+/* METCON end */
+
+/* contains lisaSkill buttons start */
+.lisaSkill > a {
+    height: 27px;
+    font-size: 14px;
+}
+/* contains lisaSkill buttons end */
+
+/* qual slider start */
+	
+.qualSlider{
+	width: 317px;
+	height: 155px;
+}
+
+.qualSlide{
+    top: 0;
+}
+	
+.qualConCard{
+    left: 34.5px;
+    width: 250px;
+    height: 155px;
+}
+/* qual slider end */
+
+.fixedCV{
+	margin: 50px 0 0 0;
+	height: 705px;
+    width: 504px;
+}
+
+#scrollCV{
+  	width: 100%;
+	height:  100%;
+}
+	
+.demImg{
+	width: 100px;
+	height: auto;
+	margin-left: 35px;
+}
+/* book Content end */
+
+}
+/* @media max-width:1920px end */
+
+/* @media max-width:1440px start */
+@media screen and (max-width:1440px){
+	
+body{
+	width: 1440px;	
+}
+	
+h3{ height: auto;
+	font-size: 1em;
+	line-height: 1.6em;
+}
+
+.workLogoQuery{
+	height: 56px !important;
+	padding: 12px 10px 0 10px!important;
+	line-height: 0 !important;
+}
+	
+/* header stylings start */
+.Nav{
+	height: 8vh;
+}
+
+.NavThird{
+	height: 8vh;
+}
+
+.headBtnInner{
+  	top: 2px;
+  	left: 12.5px;
+  	width: 110px;
+  	height: 40px;
+}
+/* header stylings end */
+
+/* Sydney bg setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.Hbridge{
+	position: fixed;
+	bottom: 1vh;
+	right: 9vw;
+	width: 30%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.OH{
+	position: fixed;
+	bottom: 1vh;
+	left: 67vw;
+	width: 30%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back1{
+	position: fixed;
+	bottom: 1vh;
+	right: 38vw;
+	width: 5%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back2{
+	position: fixed;
+	bottom: 1vh;
+	right: 43vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back3{
+	position: fixed;
+	bottom: 1vh;
+	right: 50vw;
+	width: 7%;
+	height: 55vh;
+	background-color: transparent;
+	z-index: -1;
+}
+
+.Back4{
+	position: fixed;
+	bottom: 1vh;
+	right: 58vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back5{
+	position: fixed;
+	bottom: 1vh;
+	right: 68vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Back6{
+	position: fixed;
+	bottom: 1vh;
+	right: 85.1vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center1{
+	position: fixed;
+	bottom: 1vh;
+	right: 39vw;
+	width: 13%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front1{
+	position: fixed;
+	bottom: 1vh;
+	right: 33vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front2{
+	position: fixed;
+	bottom: 1vh;
+	right: 40.5vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front3{
+	position: fixed;
+	bottom: 1vh;
+	right: 46.7vw;
+	width: 5%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Front4{
+	position: fixed;
+	bottom: 1vh;
+	right: 53.7vw;
+	width: 6%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.centrepoint{
+	position: fixed;
+	bottom: 1vh;
+	right: 64vw;
+	width: 7%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center2{
+	position: fixed;
+	bottom: 1vh;
+	right: 73.9vw;
+	width: 12.1%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Center3{
+	position: fixed;
+	bottom: 1vh;
+	right: 89vw;
+	width: 11%;
+	height: 55vh;
+	z-index: -1;
+}
+
+.Sph{
+	position: fixed;
+	bottom: 1vh;
+	left: 0;
+	width: 100%;
+	height: 737.75px;
+	background-color: transparent;
+	z-index: -1;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	left: 0;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	background-color: #FFECDF;
+	opacity: .7;
+	z-index: -1;
+}
+/* Sydney bg setup end */
+
+/* screen container thirds start */
+.scrCon1, .scrCon3{
+	display: none;
+}
+
+.scrCon2{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	background: transparent;
+}
+/* screen container thirds end */
+	
+#dropBookTarget{
+  display: none;
+}
+
+.bookTip{
+	display: none;
+}
+
+/* Book */
+.book{
+    width: 470px;
+    height: 610px;
+	margin: 15vh 0 0 34vw;
+}
+	
+.tropLogoCon{
+	margin: 0;
+	top: -85px;
+	height: 36px;
+	background: transparent;
+}
+	
+.sydCon{
+	top: -85px;
+	background: transparent;
+}
+
+.darCon{
+	top: -84px;
+	background: transparent;
+}
+
+/* Sydney cover setup start */
+.syd1, .syd2, .syd3, .syd4, .syd5, .syd6, .syd7, .syd8, .syd9, .syd10, .syd11, .syd12, .syd13, .syd14, .syd15, .syd16, .dar1,  .dar2,  .dar3,  .dar4,  .dar5,  .dar6,  .dar7,  .dar8,  .dar9,  .dar10,  .dar11,  .dar12,  .dar13,  .dar14,  .dar15,  .dar16,  .dar17{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	float: left;
+}
+
+.syd1{
+	top: 252px;
+	left: 3px;
+	width: 25px;
+}
+
+.syd2{
+	top: 202px;
+	left: 0;
+	width: 18px;
+}
+
+.syd3{
+	top: 260px;
+	left: 0;
+	width: 25px;
+}
+
+.syd4{
+	top: 235px;
+	left: -3px;
+	width: 20px;
+}
+
+.syd5{
+	top: 206px;
+	left: 0;
+	width: 20px;
+}
+
+.syd6{
+	top: 217px;
+	left: -5px;
+	width: 25px;
+}
+
+.syd7{
+	top: 182px;
+	left: -5px;
+	width: 20px;
+}
+
+.syd8{
+	top: 190px;
+	left: -10px;
+	width: 18px;
+}
+
+.syd9{
+	top: 188px;
+	left: -5px;
+	width: 25px;
+}
+
+.syd10{
+	top: 187px;
+	left: -11px;
+	width: 25px;
+}
+
+.syd11{
+	top: 208px;
+	left: -9px;
+	width: 25px;
+}
+
+.syd12{
+	top: 205px;
+	left: -12px;
+	width: 18px;
+}
+
+.syd13{
+	top: 220px;
+	left: -15px;
+	width: 20px;
+}
+
+.syd14{
+	top: 255px;
+	left: -50px;
+	width: 20px;
+}
+
+.syd15{
+	top: 185px;
+	left: -20px;
+	width: 110px;
+}
+
+.syd16{
+	top: 165px;
+	left: 40px;
+	width: 95px;
+}
+
+.dar1{
+	top: 70px;
+	left: 0;
+	width: 40px;
+}
+
+.dar2{
+	top: 65px;
+	left: -5px;
+	width: 40px;
+}
+
+.dar3{
+	top: 70px;
+	left: -5px;
+	width: 40px;
+}
+
+.dar4{
+	top: 65px;
+	left: -25px;
+	width: 35px;
+}
+
+.dar5{
+	top: 70px;
+	left: -20px;
+	width: 20px;
+}
+
+.dar6{
+	top: 70px;
+	left: -55px;
+	width: 35px;
+}
+
+.dar7{
+	top: 65px;
+	left: -100px;
+	width: 40px;
+}
+
+.dar8{
+	top: 73px;
+	left: -105px;
+	width: 35px;
+}
+
+.dar9{
+	top: 67px;
+	left: -105px;
+	width: 35px;
+}
+
+.dar10{
+	top: 68px;
+	left: -105px;
+	width: 45px;
+}
+
+.dar11{
+	top: 30px;
+	left: -130px;
+	width: 40px;
+}
+
+.dar12{
+	top: -40px;
+	left: 250px;
+	width: 30px;
+}
+
+.dar13{
+	top: -35px;
+	left: 305px;
+	width: 25px;
+}
+
+.dar14{
+	top: -40px;
+	left: 215px;
+	width: 40px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar15{
+	top: -35px;
+	left: 215px;
+	width: 30px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar16{
+	top: -80px;
+	left: -10px;
+	width: 20px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+/* Sydney cover setup end */
+
+/* controls */
+button{
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: 1000px;
+    border: none;
+	text-align: center;
+	align-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+/*
+button:focus{
+    outline: none;
+}
+
+button:hover i{
+    color: #636363;
+}
+
+i{
+    font-size: 50px;
+    color: gray;
+}
+*/
+
+#prevBtnBook{
+	top: 0;
+	font-size: 1.8em;
+	margin-left: 0;
+	height: 610px;
+}
+
+#nextBtnBook{
+	top: 0;
+	font-size: 1.8em;
+	margin-left: 420px;
+	height: 610px;
+}
+
+.binderQueries{
+	display: none;
+}
+
+.binder{
+	position: fixed !important;
+    top: 15vh;
+    left: 32.5vw;
+    height: 610px;
+}
+/* book end */
+
+/* METCON start */
+/* METCON start */
+.MetricCon{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}	
+	
+.MetGrid {
+	margin: 0;
+	width: 301px;
+	height: 203px;
+  	display: grid;
+    /* grid-template-columns is width of columns - add an extra value to make an extra column - so if there's 3 values there will be 3 columns, 4 values makes 4 cols, 5 makes 5 cols and so on */
+  	grid-template-columns: 48px 48px 48px 48px 48px;
+    /* grid-gap is width between columns */
+  	grid-gap: 3px 15px;
+  	/* padding is padding around the outside of columns */
+  	padding: 20px 0 0 0;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 0;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 40px;
+  	border-radius: 5px;
+	border: 3px #570060 solid;	
+}
+/* METCON end */
+
+/* METCON end */	
+
+/* contains lisaSkill buttons start */
+.lisaSkill{
+	margin: 3px;
+}	
+	
+.lisaSkill > a {
+    height: 20.2px;
+    font-size: 13px;
+}
+/* contains lisaSkill buttons end */
+
+/* qual slider start */
+
+.cvCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}	
+	
+.qualSlider{
+	width: 295px;
+	height: 116px;
+}
+	
+.qualSlide{
+    top: 3px;
+}
+	
+.qualConCard{
+    left: 57.5px;
+    width: 180px;
+    height: auto;
+}
+/* qual slider end */
+
+.fixedCV{
+	margin: 20px 0 0 10%;
+    width: 80%;
+	height: 575px;
+}
+
+#scrollCV{
+  	width: 100%;
+	height: 100%;
+}
+	
+.demImg{
+	width: 100px;
+	height: auto;
+	margin-left: 35px;
+}
+/* book Content end */
+}
+/* @media max-width:1440px end */
+
+@media screen and (max-width:1366px){
+	
+	body{
+		width: 1366px;	
+	}
+	
+	}
+
+/* @media max-width:1112px - start */
+@media screen and (max-width:1112px){
+	
+body{
+	width: 100vw;
+	height: 100vh;
+}
+	
+h3{
+	font-size: .9em;
+	padding: auto;
+	line-height: auto;
+}
+	
+/* header stylings start */
+.Nav{
+	height: 8vh;
+}
+
+.NavThird{
+	height: 8vh;
+}
+
+.headBtnInner{
+  	top: 2px;
+  	left: 30px;
+  	width: 130px;
+  	height: 40px;
+}
+/* header stylings end */
+
+/* screen container thirds start */
+.scrCon1, .scrCon3{
+	display: none;
+}
+
+.scrCon2{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	background: transparent;
+}
+/* screen container thirds end */
+	
+#dropBookTarget{
+  display: none;
+}
+
+.bookTip{
+	display: none;
+}
+
+/* Book */
+.book{
+    width: 500px;
+    height: 600px;
+	margin: 12vh 0 0 33.5%;
+}
+
+/* controls */
+button{
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: 1000px;
+    border: none;
+	text-align: center;
+	align-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+/*
+button:focus{
+    outline: none;
+}
+
+button:hover i{
+    color: #636363;
+}
+
+i{
+    font-size: 50px;
+    color: gray;
+}
+*/
+
+#prevBtnBook{
+	top: 0;
+	margin-left: 0;
+	height: 600px;
+}
+
+#nextBtnBook{
+	top: 0;
+	font-size: 1.8em;
+	margin-left: 450px;
+	height: 600px;
+}
+
+.binderQueries{
+	display: none;
+}
+
+.binder{
+	position: absolute;
+    top: 12vh;
+    left: 32.5vw;
+    height: 600px;
+}
+
+.pg50percent{
+	background: #00FFAD;	
+}
+	
+.sydCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 130.5px;
+	background: #83FFEA;
+}
+	
+.tropLogoCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 39px;
+	background: #79D6FF;
+}	
+
+.darCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 130.5px;
+	background: #F9A7FF;
+}
+
+/* Sydney cover setup start */
+.syd1, .syd2, .syd3, .syd4, .syd5, .syd6, .syd7, .syd8, .syd9, .syd10, .syd11, .syd12, .syd13, .syd14, .syd15, .syd16, .dar1,  .dar2,  .dar3,  .dar4,  .dar5,  .dar6,  .dar7,  .dar8,  .dar9,  .dar10,  .dar11,  .dar12,  .dar13,  .dar14,  .dar15,  .dar16,  .dar17{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	float: left;
+}
+
+.syd1{
+	top: 153px;
+	left: 5px;
+	width: 33px;
+}
+
+.syd2{
+	top: 118px;
+	left: 0;
+	width: 17px;
+}
+
+.syd3{
+	top: 155px;
+	left: 0;
+	width: 45px;
+}
+
+.syd4{
+	top: 120px;
+	left: -8px;
+	width: 32px;
+}
+
+.syd5{
+	top: 65px;
+	left: -10px;
+	width: 35px;
+}
+
+.syd6{
+	top: 128px;
+	left: -15px;
+	width: 25px;
+}
+
+.syd7{
+	top: 110px;
+	left: -15px;
+	width: 17px;
+}
+
+.syd8{
+	top: 102px;
+	left: -15px;
+	width: 18px;
+}
+
+.syd9{
+	top: 110px;
+	left: -10px;
+	width: 23px;
+}
+
+.syd10{
+	top: 107px;
+	left: -15px;
+	width: 23px;
+}
+
+.syd11{
+	top: 117px;
+	left: -15px;
+	width: 25px;
+}
+
+.syd12{
+	top: 110px;
+	left: -20px;
+	width: 20px;
+}
+
+.syd13{
+	top: 140px;
+	left: -20px;
+	width: 20px;
+}
+
+.syd14{
+	top: 165px;
+	left: -55px;
+	width: 19px;
+}
+
+.syd15{
+	top: 75px;
+	left: 65px;
+	width: 105px;
+}
+
+.syd16{
+	top: 55px;
+	left: 130px;
+	width: 90px;
+}
+
+.dar1{
+	top: 73px;
+	left: 5px;
+	width: 45px;
+}
+
+.dar2{
+	top: 65px;
+	left: 0;
+	width: 37px;
+}
+
+.dar3{
+	top: 72px;
+	left: 0;
+	width: 40px;
+}
+
+.dar4{
+	top: 50px;
+	left: 5px;
+	width: 40px;
+}
+
+.dar5{
+	top: 70px;
+	left: 0;
+	width: 25px;
+}
+
+.dar6{
+	top: 70px;
+	left: 0;
+	width: 35px;
+}
+
+.dar7{
+	top: 70px;
+	left: -110px;
+	width: 75px;
+}
+
+.dar8{
+	top: 70px;
+	left: -110px;
+	width: 45px;
+}
+
+.dar9{
+	top: 70px;
+	left: -115px;
+	width: 40px;
+}
+
+.dar10{
+	top: 0;
+	left: -110px;
+	width: 40px;
+}
+
+.dar11{
+	top: -35px;
+	left: 300px;
+	width: 35px;
+}
+
+.dar12{
+	top: -28px;
+	left: 240px;
+	width: 35px;
+}
+
+.dar13{
+	top: -28px;
+	left: 285px;
+	width: 30px;
+}
+
+.dar14{
+	top: -20px;
+	left: 245px;
+	width: 40px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar15{
+	top: -27px;
+	left: 195px;
+	width: 24px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar16{
+	top: -30px;
+	left: 170px;
+	width: 30px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+/* Sydney cover setup end */
+/* book end */
+
+/* METCON start */
+
+.MetricCon{
+	position: relative;
+	width: 300px;
+	height: 225px;
+	margin: 0;
+}
+
+.MetGrid {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+  	display: grid;
+    /* grid-template-columns is width of columns - add an extra value to make an extra column - so 3 values creates 3 columns, 4 values is 4 cols, 5 is 5 cols etc */
+  	/* grid-template-columns is width of columns - add an extra value to make an extra column - so if there's 3 values there will be 3 columns, 4 values makes 4 cols, 5 makes 5 cols and so on */
+  	grid-template-columns: 17% 17% 17% 17% 17%;
+    /* grid-gap is width between columns */
+  	grid-gap: 0 2% 0 0;
+  	/* padding is padding around the outside of columns */
+  	padding: 0;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 2px;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 68%;
+  	border-radius: 5px;
+	border: 3px #570060 solid;	
+}
+	
+/* METCON end */
+
+/* contains lisaSkill buttons start */
+.lisaSkill > a {
+    height: 27px;
+    font-size: 14px;
+}
+/* contains lisaSkill buttons end */
+
+/* qual slider start */
+	
+.qualSlider{
+	width: 317px;
+	height: 155px;
+}
+
+.qualSlide{
+    top: 0;
+}
+	
+.qualConCard{
+    left: 34.5px;
+    width: 250px;
+    height: 155px;
+}
+/* qual slider end */
+
+.fixedCV{
+	position: absolute;
+	margin: 30px 0 0 10%;
+	height: 550px;
+    width: 80%;
+}
+
+#scrollCV{
+  	width: 100%;
+	height:  100%;
+}
+	
+.demImg{
+	width: 100px;
+	height: auto;
+	margin-left: 35px;
+}
+/* book Content end */
+
+}
+/* @media max-width:1112px - end */
+
+/* @media max-width:1080px - start */
+@media screen and (max-width:1080px){
+	
+body{
+	width: 1080px;
+	height: auto;
+	position: absolute;
+}	
+	
+h3{ height: auto;
+	font-size: 2em;
+	line-height: auto;
+	text-align: center;
+}
+
+p{
+	font-size: 1.95em;
+	text-align: left;
+	padding: 0 80px !important;
+	font-weight: 450;
+	letter-spacing: .3px;
+	line-height: 1.9em;
+}
+
+.workLogoQuery{
+	height: 110px !important;
+}
+
+#EqlogoWM, #BNlogoWM, #tilliHablogoWM{
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 90px !important;
+}
+	
+.Nav{
+	width: 1080px;
+	height: 105px;
+	z-index: 30000;
+}
+	
+.headBtnInner{
+  	top: 4.5px;
+}
+
+.scrCon1, .scrCon3{
+    display: none;
+}
+	
+.scrCon2{
+	margin: 0;
+	padding: 0;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    width: 1080px;
+	height: 150vh;
+	background: #05FFC3;
+}
+
+/* Book */
+.book{
+	top: 150px;
+    left: 0;
+    position: relative;
+    width: 1080px;
+	height: 1300px;
+    transition: transform 0.5s;
+    margin: 0;
+	background: #5100FF;
+}
+	
+#f1.frontContent{
+	width: 1080px;
+}
+	
+/* book tip is drag notebook instructions style/ani start */	
+.bookTip, .bookTipAct{
+	display: block;
+	position: fixed;
+	width: auto;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	z-index: 35000;
+}
+	
+/* book tip is drag notebook instructions style/ani start */	
+.bookTip{
+	top: 120px;
+	left: 0;
+}
+	
+/* book tip is drag notebook instructions style/ani start */	
+.bookTipAct{
+	bottom: 8vh;
+	left: 0;
+}
+	
+#bookTip, #bookTipAct {
+    animation-name: bookTipAni;
+    animation-duration: 120s;
+    /* none / forward / backward / both */
+    animation-fill-mode: forwards ;
+}	
+	
+@keyframes bookTipAni{
+ 0%{ 
+    color: #570060; 
+	background: rgba( 255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;
+} 
+25%{ 
+    color: #fff; 
+	background: rgba(52, 4, 73, 0.829);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+} 
+50%{ 
+    color: #570060; 
+	background: rgba( 255, 255, 255, 0.2);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;  
+} 
+75%{ 
+    color: #fff; 
+	background: rgba(52, 4, 73, 0.829);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}            
+100%{ 
+    color: transparent; 
+	background: transparent; 
+} 
+	
+}
+/* book tip is drag notebook instructions style/ani end */
+
+.sydCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 283.5px;
+	background: #0a91ff;
+}
+	
+.tropLogoCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 83px;
+	background: #00ffdd;
+}	
+
+.tropLogoInCon{
+	background: #ff7b00;
+}
+
+.darCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	float: left;
+	height: 283.5px;
+	background: #ff1b9c;
+}
+
+/* Sydney cover setup start */
+.syd1, .syd2, .syd3, .syd4, .syd5, .syd6, .syd7, .syd8, .syd9, .syd10, .syd11, .syd12, .syd13, .syd14, .syd15, .syd16, .dar1,  .dar2,  .dar3,  .dar4,  .dar5,  .dar6,  .dar7,  .dar8,  .dar9,  .dar10,  .dar11,  .dar12,  .dar13,  .dar14,  .dar15,  .dar16,  .dar17{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: auto;
+	float: left;
+}
+
+.syd1{
+	top: 265px;
+	left: 5px;
+	width: 70px;
+}
+
+.syd2{
+	top: 170px;
+	left: 0;
+	width: 40px;
+}
+
+.syd3{
+	top: 290px;
+	left: 0;
+	width: 64px;
+}
+
+.syd4{
+	top: 210px;
+	left: -18px;
+	width: 59px;
+}
+
+.syd5{
+	top: 68px;
+	left: -20px;
+	width: 75px;
+}
+
+.syd6{
+	top: 175px;
+	left: -25px;
+	width: 64px;
+}
+
+.syd7{
+	top: 155px;
+	left: -25px;
+	width: 39px;
+}
+
+.syd8{
+	top: 130px;
+	left: -25px;
+	width: 41px;
+}
+
+.syd9{
+	top: 155px;
+	left: -20px;
+	width: 54px;
+}
+
+.syd10{
+	top: 140px;
+	left: -25px;
+	width: 54px;
+}
+
+.syd11{
+	top: 170px;
+	left: -25px;
+	width: 59px;
+}
+
+.syd12{
+	top: 152px;
+	left: -30px;
+	width: 44px;
+}
+
+.syd13{
+	top: 195px;
+	left: -30px;
+	width: 49px;
+}
+
+.syd14{
+	top: 290px;
+	left: -120px;
+	width: 55px;
+}
+
+.syd15{
+	top: 150px;
+	left: -50px;
+	width: 165px;
+}
+
+.syd16{
+	top: 115px;
+	left: 10px;
+	width: 165px;
+}
+
+.dar1{
+	top: 73px;
+	left: 10px;
+	width: 95px;
+}
+
+.dar2{
+	top: 70px;
+	left: 0;
+	width: 90px;
+}
+
+.dar3{
+	top: 72px;
+	left: 0;
+	width: 70px;
+}
+
+.dar4{
+	top: 50px;
+	left: 5px;
+	width: 70px;
+}
+
+.dar5{
+	top: 70px;
+	left: 0;
+	width: 45px;
+}
+
+.dar6{
+	top: 70px;
+	left: 0;
+	width: 95px;
+}
+
+.dar7{
+	top: 70px;
+	left: -190px;
+	width: 215px;
+}
+
+.dar8{
+	top: 70px;
+	left: -190px;
+	width: 85px;
+}
+
+.dar9{
+	top: 70px;
+	left: -185px;
+	width: 80px;
+}
+
+.dar10{
+	top: -70px;
+	left: 560px;
+	width: 100px;
+}
+
+.dar11{
+	top: -75px;
+	left: 580px;
+	width: 65px;
+}
+
+.dar12{
+	top: -68px;
+	left: 440px;
+	width: 85px;
+}
+
+.dar13{
+	top: -58px;
+	left: 290px;
+	width: 60px;
+}
+
+.dar14{
+	top: -60px;
+	left: 245px;
+	width: 80px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar15{
+	top: -67px;
+	left: 125px;
+	width: 24px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+
+.dar16{
+	top: -60px;
+	left: 283px;
+	width: 50px;
+	/*filter: blur(.2px);
+  	-webkit-filter: blur(.2px);*/
+}
+/* Sydney cover setup end */
+
+.MetricCon{
+	width: 1080px;	
+	border: none;
+}
+	
+.MetGrid {
+	width: 1080px;
+	height: 220px;
+  	display: grid;
+    /* grid-template-columns is width of columns - add an extra value to make an extra column - so if there's 3 values there will be 3 columns, 4 values makes 4 cols, 5 makes 5 cols and so on */
+  	grid-template-columns: 69px 69px 69px 69px 69px;
+    /* grid-gap is width between columns */
+  	grid-gap: 17px 17px;
+  	/* padding is padding around the outside of columns */
+  	padding: 16px 0 38px 0;
+	border: none;
+}
+
+.MetGrid > div {
+  	text-align: center;
+  	/* padding is padding around text/content inside grid squares */
+  	padding: 0;
+	font-weight: 600;
+   /* height is height of grid squares */
+  	height: 62px;
+	border: 3px #570060 solid;	
+}
+	
+.binder{
+    display: none;
+}
+
+.binderQueries{
+    position: relative;
+	margin: 0;
+    width: 1080px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    z-index: 9999;
+}
+
+.spiral{
+    position: relative;
+	margin-top: -150px;
+    width: 12px;
+    height: 36px;
+    background: #f6f7f4;
+    border-radius: 5mm;
+    z-index: 9999;
+	-moz-box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+    -webkit-box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+	box-shadow: inset 1px 1px 2px 0px rgba(87,0,96,0.23);
+}
+
+.paper {
+	width: 1080px;
+	height: 1300px;
+    perspective: 15000px;
+}	
+
+/* displays content on back on page forwards, not backwards */
+.backContent {
+    transform: rotateX(200deg);
+}
+
+/* Paper flip effect - flips out left page - increasing  transform: rotateY(-180deg) to eg -280deg causes paper flip to back of stack like a notepad */
+.flipped .front, .flipped .back{
+    transform: rotateX(200deg);
+}
+	
+/* .front, .back of pages*/
+.front, .back{
+    transform-origin: top;
+}
+
+.bookFix{
+    width: 1080px;
+    height: 2000px;
+	top: 0;
+	left: 0;
+    position: fixed;
+    margin: 0;
+	background: #D8C0FF;
+}
+	
+/* iPhscrollDiv scroll container for iPhone start */
+.bookScroll{
+    position: relative;
+    margin: 0;
+    width: 1080px;
+    height: auto;
+    overflow: auto;
+    background-color: #DAB500;
+}
+
+.bookContent{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #02FF42;
+}	
+	
+.bookDropCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 1080px;
+	height: 1200px;
+	float: left;
+	background: #FF9B9D; 
+	z-index: 25000;
+}
+	
+#dropBookTarget {
+    display: block;
+    top: 900px;
+    left: 0;
+    position: relative;
+    width: 1080px;
+    height: 2800px;
+    padding: 0;
+    background: #FFE900;
+	z-index: 0;
+}		
+
+#prevBtnBook, #nextBtnBook{
+	width: 10%;
+	height: 100vh;
+	z-index: 500;
+	opacity: .3;
+}
+
+#prevBtnBook{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	position: fixed;
+	left: 0;
+	background: #FF7DEF;
+}
+
+#nextBtnBook{
+	margin: 0;
+	padding: 0;
+	top: 0;
+	position: fixed;
+	left: 90%;
+	background: #AFA5FF;
+}
+	
+#p5{
+    z-index: 0;
+	transform: rotateY(180deg);
+	margin-left: 0;
+}	
+
+.frontContent, .backContent {
+    width: 1080px;
+	border-radius: 0 0 25px 25px;
+}
+	
+.front, .back{
+	border-radius: 0 0 25px 25px;	
+}	
+	
+.paraCon{
+  	position: relative;
+  	top: 0;
+  	left: 0;
+	margin: 0;
+	padding: 0;
+  	width: 1080px;
+  	height: auto;
+  	float: left;
+}	
+
+.fixedCV{
+	top: 85px;
+    left: 0;
+	margin: 0;
+	padding: 0;
+	height: 1110px;
+    width: 1080px;
+    position: relative;
+    background: #BC8FFF;
+	overflow: hidden;
+}
+
+#scrollCV{
+	position: absolute;
+  	top: 0;
+    left: 0;
+	margin: 0;
+	padding: 0;
+  	width: 1080px;
+	height:  100%;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+	background: #A4A4A4;
+}
+
+#contentCV{
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+ 	position: absolute;
+ 	float: left;
+	background: #D02225;
+}	
+	
+.cvCon{
+	width: 1080px;
+	left: 0;
+}
+	
+.pg10percent, .pg20percent, .pg25percent, .pg30percent, .pg33percent, .pg40percent, .pg50percent{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;	
+}
+	
+.pg80percent{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+	
+.TropicArtLogo{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #A045FF;
+}
+	
+/* footer start */
+.FootBottom{
+	position: fixed;
+	width: 1080px;
+	height: 105px;
+	bottom: 0;
+	background: #FFECDF;
+	z-index: 45000;
+	box-shadow: 1px 5px 8px 0px rgba(0,0,0,0.9);
+	pointer-events: none;
+}
+}
+
